@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class FormAdministrador extends JFrame {
 
@@ -54,6 +56,19 @@ public class FormAdministrador extends JFrame {
 		contentPane.add(labelNombreAdmin);
 		
 		JButton btnNewButton = new JButton("Gesti\u00F3n de Usuarios");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+
+              GestionUsuarios u = new GestionUsuarios();
+			
+             u.setVisible(true);
+             u.cargarCombo();
+				setVisible(false);
+				
+				
+			}
+		});
 		btnNewButton.setBackground(Color.DARK_GRAY);
 		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 16));

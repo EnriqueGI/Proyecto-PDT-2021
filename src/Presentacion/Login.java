@@ -79,7 +79,7 @@ public class Login extends JFrame {
                        FormAdministrador Fa = new FormAdministrador();
 				
                     Fa.setVisible(true);
-                	Fa.labelNombreAdmin.setText(u.getNombreUsuario());
+                	Fa.labelNombreAdmin.setText(u.getNombre());
 					setVisible(false);
 					
 				

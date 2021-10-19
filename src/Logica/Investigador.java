@@ -5,6 +5,9 @@ public class Investigador extends Usuario{
 	private String documento;
 	private String domicilio;
 	private Ciudad ciudad;
+	private LinkedList<Formulario> formulario;
+	private  EstacionesDeMedicion estacion;
+	
 	public Ciudad getCiudad() {
 		return ciudad;
 	}
@@ -14,9 +17,9 @@ public class Investigador extends Usuario{
 	}
 
 	private String telefono;
-	private LinkedList<Formulario> formulario;
+
 	
-	private  EstacionesDeMedicion estacion;
+	
 	public Investigador() {
 		super();
 		// TODO Auto-generated constructor stub

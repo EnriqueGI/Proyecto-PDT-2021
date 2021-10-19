@@ -23,8 +23,8 @@ public class DAOLogin {
 			Usuario u = new Usuario();
 			while(resultado.next()) {
 				
-				u.setRol(resultado.getInt("ROL"));
-				u.setNombreUsuario(resultado.getString("NombreUsuario"));
+				u.setRol(resultado.getInt("IdROL"));
+				u.setNombre(resultado.getString("Nombre"));
 			}
 			return u;
 		}catch(SQLException e) {

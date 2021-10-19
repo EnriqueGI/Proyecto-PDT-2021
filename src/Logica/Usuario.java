@@ -4,7 +4,7 @@ public class Usuario {
 	private String nombre;
 	private String apellido;
 	private String mail;
-	private String nombreUsuario;
+
 	private String contraseña;
 	private int rol;
 	private TipoUsuario tipo;
@@ -33,9 +33,7 @@ public class Usuario {
 		return mail;
 	}
 
-	public String getNombreUsuario() {
-		return nombreUsuario;
-	}
+	
 
 	public String getContraseña() {
 		return contraseña;
@@ -57,9 +55,7 @@ public class Usuario {
 		this.mail = mail;
 	}
 
-	public void setNombreUsuario(String nombreUsuario) {
-		this.nombreUsuario = nombreUsuario;
-	}
+	
 
 	public void setContraseña(String contraseña) {
 		this.contraseña = contraseña;
